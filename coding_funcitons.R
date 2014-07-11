@@ -28,9 +28,7 @@ f2 <- function(n){l <- vector("list", length = n); for(i in seq_len(n)) l[[i]] <
 f3 <- function(n){lapply(seq_len(n),seq)}                                                                          
   
 benchmark(f1(n), f2(n),f3(n), columns = c("test", "replications", "elapsed", "relative"),
-                replications = 10)
+                replications = 100)
 
-### test  replications elapsed relative
-#1  f1(n)           10    1.94    8.083
-#2  f2(n)           10    0.27    1.125
-#3  f3(n)           10    0.24    1.000
+
+
